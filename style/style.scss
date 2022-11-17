@@ -13,3 +13,83 @@
     padding: 0 60px;
     margin: auto;
 }
+
+a{
+    text-decoration: none !important;
+}
+
+//HOMEPAGE STYLE
+
+.homepage-section{
+    padding-top: 50px;
+    background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+    .header{
+        @include fb();
+    }
+    .header-contacts{
+        display: flex;
+        .lang-item{
+            display: inline-block;
+            button{
+                @include font(12px,$white,700,$font-family);
+                height: 24px;
+                width: 29px;
+                @include fc();
+                background: none;
+                border: none;
+            }
+            .active{
+                height: 24px;
+                width: 29px;
+                border-radius: 8px;
+                background: $red;
+                border: none;
+                color: $white;
+                
+            }
+        }
+        .contacts-item{
+            display: inline-block;
+            margin-right: 13px;
+            .adress{
+                @include font(16px,$white,400,$font-family);
+            }
+            .number{
+                @include font(16px,$white,600,$font-family);
+            }
+        }
+    }
+    nav{
+        display: flex;
+        justify-content: end;
+        .nav-item{
+            display: inline-block;
+            margin-left: 15px;
+            a{
+                @include font(16px,$white,600,$font-family);
+            }
+        }
+    }
+    .main-page{
+        padding-top: 63px;
+        min-height: 644px;
+        background: url('../images/Shade.png') repeat-x bottom, 
+        url('../images/Symbol\ Long\ leg.png') no-repeat bottom,
+        url('../images/Frame\ 2.svg') no-repeat bottom center;
+
+    }
+    .arrow{
+        height: 42px;
+        width: 42px;
+        border: 1px solid white;
+        border-radius: 50%;
+        background: url('../images/Vector\ \(1\).png') no-repeat center;
+        margin-left: 639px;
+        margin-top: 673px;
+        margin-bottom: 20px;
+
+        
+    }
+
+}
+
