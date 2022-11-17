@@ -17,7 +17,13 @@
 a{
     text-decoration: none !important;
 }
-
+ul{
+    margin-top: 0;
+    margin-bottom: 0rem !important;
+}
+p{
+    margin-bottom: 0rem !important;
+}
 //HOMEPAGE STYLE
 
 .homepage-section{
@@ -71,25 +77,36 @@ a{
         }
     }
     .main-page{
-        padding-top: 63px;
+        margin-top: 63px;
         min-height: 644px;
         background: url('../images/Shade.png') repeat-x bottom, 
         url('../images/Symbol\ Long\ leg.png') no-repeat bottom,
         url('../images/Frame\ 2.svg') no-repeat bottom center;
+        @include fc();
+        flex-wrap: wrap;
+        flex-direction: column;
+        p{
+            @include font(38px,$white,500,$font-family);
+            text-align: center;
+            margin-top: -63px;
+        }
+        .arrow{
+            height: 42px;
+            width: 42px;
+            border: 1px solid white;
+            border-radius: 50%;
+            background: url('../images/Vector\ \(1\).png') no-repeat center;
+            
+            
+            
+        }
+        .main-content{
+            text-align: center;
+        }
+        }
 
     }
-    .arrow{
-        height: 42px;
-        width: 42px;
-        border: 1px solid white;
-        border-radius: 50%;
-        background: url('../images/Vector\ \(1\).png') no-repeat center;
-        margin-left: 639px;
-        margin-top: 673px;
-        margin-bottom: 20px;
 
-        
-    }
 
-}
+
 

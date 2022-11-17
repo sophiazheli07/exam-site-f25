@@ -16,6 +16,15 @@ a {
   text-decoration: none !important;
 }
 
+ul {
+  margin-top: 0;
+  margin-bottom: 0rem !important;
+}
+
+p {
+  margin-bottom: 0rem !important;
+}
+
 .homepage-section {
   padding-top: 50px;
   background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
@@ -84,17 +93,30 @@ a {
   font-family: "TT Norms", sans-serif;
 }
 .homepage-section .main-page {
-  padding-top: 63px;
+  margin-top: 63px;
   min-height: 644px;
   background: url("../images/Shade.png") repeat-x bottom, url("../images/Symbol Long leg.png") no-repeat bottom, url("../images/Frame 2.svg") no-repeat bottom center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
-.homepage-section .arrow {
+.homepage-section .main-page p {
+  font-size: 38px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-family: "TT Norms", sans-serif;
+  text-align: center;
+  margin-top: -63px;
+}
+.homepage-section .main-page .arrow {
   height: 42px;
   width: 42px;
   border: 1px solid white;
   border-radius: 50%;
   background: url("../images/Vector (1).png") no-repeat center;
-  margin-left: 639px;
-  margin-top: 673px;
-  margin-bottom: 20px;
+}
+.homepage-section .main-page .main-content {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
