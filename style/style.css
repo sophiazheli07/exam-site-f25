@@ -108,15 +108,66 @@ p {
   font-weight: 500;
   font-family: "TT Norms", sans-serif;
   text-align: center;
-  margin-top: -63px;
+  margin-top: -85px;
 }
-.homepage-section .main-page .arrow {
+.homepage-section .main-page .main-content {
+  text-align: center;
+}
+.homepage-section .arrow {
+  position: relative;
+  top: 270px;
   height: 42px;
   width: 42px;
   border: 1px solid white;
   border-radius: 50%;
   background: url("../images/Vector (1).png") no-repeat center;
 }
-.homepage-section .main-page .main-content {
-  text-align: center;
+
+.experience-services-section {
+  min-height: 1374px;
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+}
+.experience-services-section .services-item {
+  text-align: right;
+  margin-top: 20px;
+}
+.experience-services-section .services-item a {
+  font-size: 42px;
+  color: #B3B3BA;
+  font-weight: 600;
+  font-family: "TT Norms", sans-serif;
+}
+.experience-services-section .services-list {
+  margin-top: -20px;
+}
+.experience-services-section .services-item-active a {
+  font-size: 42px;
+  font-weight: 600;
+  font-family: "TT Norms", sans-serif;
+  background-image: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.experience-services-section .services-item-active {
+  text-align: right;
+}
+.experience-services-section .nav-services {
+  display: flex;
+  flex-direction: row;
+  padding-top: 80px;
+}
+.experience-services-section .decr-serv h2 {
+  font-size: 32px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-family: "TT Norms", sans-serif;
+}
+.experience-services-section .decr-serv p {
+  font-size: 21px;
+  color: #FFFFFF;
+  font-family: "TT Norms", sans-serif;
+}
+.experience-services-section .decr-serv hr {
+  color: #E6E6F0;
+  border-top: 4px solid;
 }/*# sourceMappingURL=style.css.map */
