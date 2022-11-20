@@ -80,7 +80,6 @@ p {
 }
 .homepage-section nav {
   display: flex;
-  justify-content: end;
 }
 .homepage-section nav .nav-item {
   display: inline-block;
@@ -153,8 +152,20 @@ p {
 }
 .experience-services-section .nav-services {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding-top: 80px;
+}
+.experience-services-section .nav-services .horizontal hr {
+  color: #F0145A;
+  border-top: 4px solid;
+  opacity: unset;
+  transform: rotate(90deg);
+  width: 360px;
+}
+.experience-services-section .nav-services .horizontal .hr-serv-second {
+  color: #E6E6F0;
+  margin-top: 50px;
 }
 .experience-services-section .decr-serv h2 {
   font-size: 32px;
@@ -167,7 +178,125 @@ p {
   color: #FFFFFF;
   font-family: "TT Norms", sans-serif;
 }
-.experience-services-section .decr-serv hr {
-  color: #E6E6F0;
-  border-top: 4px solid;
+.experience-services-section .services {
+  padding-top: 80px;
+  left: 0;
+}
+.experience-services-section .services .breadcrumb .breadcrumb-item a {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-family: "TT Norms", sans-serif;
+  opacity: 0.5;
+}
+.experience-services-section .services h2 {
+  font-size: 42px;
+  font-weight: 600;
+  font-family: "TT Norms", sans-serif;
+  background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.experience-services-section .services-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 68px;
+}
+.experience-services-section .services-grid-item {
+  margin-bottom: 58px;
+}
+.experience-services-section .services-grid-item .img-item {
+  height: 92px;
+  width: 92px;
+  background: #FFFFFF;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.experience-services-section .services-grid-item .services-grid-header {
+  font-size: 24px;
+  color: #24A3FF;
+  font-weight: 500;
+  font-family: "TT Norms", sans-serif;
+}
+.experience-services-section .services-grid-item .services-grid-description {
+  font-size: 18px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-family: "TT Norms", sans-serif;
+  margin-top: 15px;
+}
+
+.team-section {
+  min-height: 1000px;
+  background: #FFFFFF;
+}
+.team-section .carousel .slide {
+  background: #E5E5E5;
+}
+.team-section .team-slider {
+  margin-top: 60px;
+}
+.team-section .team-slider .carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-section .team-slider img {
+  max-width: 413px;
+  max-height: 500px;
+  margin-right: 140px;
+}
+.team-section .carousel-item {
+  max-width: 1320px;
+  max-height: 501px;
+  background: #F5F5FA;
+  border-radius: 12px;
+}
+.team-section .description-team-content {
+  margin-right: 40px;
+  margin-left: -102px;
+  margin-bottom: 93px;
+}
+.team-section .description-team-content .breadcrumb-item a {
+  font-size: 14px;
+  color: #24A3FF;
+  font-weight: 700;
+  font-family: "TT Norms", sans-serif;
+}
+.team-section .description-team-content h2 {
+  font-size: 42px;
+  font-weight: 700;
+  font-family: "TT Norms", sans-serif;
+  background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.team-section .description-team-content .decr-team {
+  margin-top: 20px;
+}
+.team-section .description-team-content .decr-team .name {
+  font-size: 18px;
+  color: #B3B3BA;
+  font-weight: 400;
+  font-family: "TT Norms", sans-serif;
+}
+.team-section .description-team-content .decr-team .position {
+  font-size: 16px;
+  color: #B3B3BA;
+  font-weight: 400;
+  font-family: "TT Norms", sans-serif;
+}
+.team-section .description-team-content .carousel-control-prev-icon {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #24A3FF;
+}
+.team-section .description-team-content .carousel-indicators button {
+  background: #24A3FF;
 }/*# sourceMappingURL=style.css.map */

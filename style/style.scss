@@ -68,7 +68,6 @@ p{
     }
     nav{
         display: flex;
-        justify-content: end;
         .nav-item{
             display: inline-block;
             margin-left: 15px;
@@ -131,9 +130,21 @@ p{
             text-align: right;
         }
         .nav-services{
-            display: flex;
-            flex-direction: row;
+            @include fc();
             padding-top: 80px;
+            .horizontal{
+                hr{
+                    color: $red;
+                    border-top: 4px solid;
+                    opacity: unset;
+                    transform: rotate(90deg);
+                    width: 360px;
+                }
+                .hr-serv-second{
+                    color:#E6E6F0;
+                    margin-top: 50px;
+                }
+            }
         }
         .decr-serv{
             h2{
@@ -145,13 +156,115 @@ p{
                 font-family: $font-family;
                 
             }
-            hr{
-                color: #E6E6F0;
-                border-top: 4px solid;
+            
+        }
+        .services{
+            padding-top: 80px;
+            left: 0;
+            .breadcrumb{
+                .breadcrumb-item a{
+                    @include font(14px,$white,500,$font-family);
+                    opacity:0.5;
+                }
+                
+            }
+            h2{
+                font-size: 42px;
+                font-weight: 600;
+                font-family: $font-family;
+                background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .services-grid{
+            @include fb();
+            margin-top: 68px;
+        }
+        .services-grid-item{
+            margin-bottom: 58px;
+            .img-item{
+                height: 92px;
+                width: 92px;
+                background: $white;
+                border-radius: 24px;
+                @include fc();
+                margin-bottom: 20px;
+            }
+            .services-grid-header{
+                @include font(24px,$active,500,$font-family);
+                
+            }
+            .services-grid-description{
+                @include font(18px,$white,500,$font-family);
+                margin-top: 15px;
             }
         }
     }
+.team-section{
+    min-height: 1000px;
+    background:  $white;
+    
+    .carousel .slide{
+        background: #E5E5E5;
+    }
+    .team-slider{
+        margin-top: 60px;
+        .carousel-item{
+            @include fc()
+        }
+        img{
+            max-width: 413px;
+            max-height: 500px;
+            margin-right:140px;
 
+        }
+
+    }
+    .carousel-item{
+        max-width: 1320px;
+        max-height: 501px;
+        background: #F5F5FA;
+        border-radius: 12px;
+
+    }
+    .description-team-content{
+        margin-right: 40px;
+        margin-left: -102px;
+        margin-bottom: 93px;
+        .breadcrumb-item a{
+            @include font(14px,$active,700,$font-family)
+        }
+        h2{
+            font-size: 42px;
+            font-weight: 700;
+            font-family: $font-family;
+            background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .decr-team{
+            margin-top: 20px;
+            .name{
+                @include font(18px,$grey,400,$font-family);
+            }
+            .position{
+                @include font(16px,$grey,400,$font-family);
+            }
+        }
+        .carousel-control-prev-icon{
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            background: $active;
+        }
+        .carousel-indicators{
+            button{
+                background: $active;
+            }
+        }
+    }
+}
 
 
 
