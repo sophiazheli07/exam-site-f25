@@ -264,7 +264,50 @@ p{
             }
         }
     }
+    .shadow img{
+        width: 100%;
+
+    }
 }
 
+footer{
+    hr{
+        border: 2px solid #E6E6F0;
+        opacity: unset;
+    }
+    padding-top: 30px;
+    .footer-contacts-wrap{
+        @include fc();
+        .footer-adress{
+            margin-right:31px;
+            @include font(16px,$main,400,$font-family);
+        }
+        a p{
+            @include font(12px,$active,700,$font-family);
+            margin-left: 10px;
+        }
 
+    }
+    .footer-contacts{
+        @include fb();
+        .footer-credits{
+            p{
+                @include font(16px,$grey,400,$font-family)
+            }
+        }
+    }
+    .socials{
+        margin-top: 22px;
+        .socials-item{
+            display: inline-block;
+            margin-right: 10px;
+            .socials-number{
+                @include font(16px,#46466E,700,$font-family)
+            }
+            .mail-socials{
+                @include font(16px,$active,700,$font-family);
+            }
+        }
+    }
+}
 
