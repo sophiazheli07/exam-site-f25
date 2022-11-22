@@ -264,9 +264,11 @@ p{
             }
         }
     }
-    .shadow img{
-        width: 100%;
-
+    .team-shadow{
+        // position: relative;
+        // top: -15px;
+        transform: translate(0px, -5px);
+        vertical-align: unset;
     }
 }
 
@@ -308,6 +310,12 @@ footer{
                 @include font(16px,$active,700,$font-family);
             }
         }
+    }
+}
+.carousel-item{
+    img{
+        max-height: 500px;
+        max-width: 413px;
     }
 }
 

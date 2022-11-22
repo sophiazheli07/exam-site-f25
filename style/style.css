@@ -300,8 +300,9 @@ p {
 .team-section .description-team-content .carousel-indicators button {
   background: #24A3FF;
 }
-.team-section .shadow img {
-  width: 100%;
+.team-section .team-shadow {
+  transform: translate(0px, -5px);
+  vertical-align: unset;
 }
 
 footer {
@@ -360,4 +361,9 @@ footer .socials .socials-item .mail-socials {
   color: #24A3FF;
   font-weight: 700;
   font-family: "TT Norms", sans-serif;
+}
+
+.carousel-item img {
+  max-height: 500px;
+  max-width: 413px;
 }/*# sourceMappingURL=style.css.map */
